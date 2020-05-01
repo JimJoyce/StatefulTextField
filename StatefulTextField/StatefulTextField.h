@@ -12,6 +12,8 @@
 FOUNDATION_EXPORT double StatefulTextFieldVersionNumber;
 
 //! Project version string for StatefulTextField.
-FOUNDATION_EXPORT const unsigned char StatefulTextFieldVersionString[1.0];
+FOUNDATION_EXPORT const unsigned char StatefulTextFieldVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <StatefulTextField/PublicHeader.h>
+
+
