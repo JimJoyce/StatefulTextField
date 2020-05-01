@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
   spec.name = "StatefulTextField"
   spec.version = "1.0.0"
   spec.summary = "A UITextField subclass with built in live validation and formatting."
-  # spec.homepage = "https://github.com/JimJoyce/StatefulTextField"
+  spec.homepage = "https://github.com/JimJoyce/StatefulTextField"
   spec.license = { type: 'MIT', file: 'LICENSE' }
   spec.authors = { "Jim Joyce" => 'jjoyce1@me.com' }
   # spec.social_media_url = "http://twitter.com/thoughtbot"
