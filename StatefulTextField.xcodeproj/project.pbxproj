@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC228FFB245C137E00D779A5 /* PresetValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC228FF8245C137E00D779A5 /* PresetValidations.swift */; };
+		CC228FFC245C137E00D779A5 /* ValidationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC228FF9245C137E00D779A5 /* ValidationHelpers.swift */; };
+		CC228FFD245C137E00D779A5 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC228FFA245C137E00D779A5 /* Formatters.swift */; };
+		CC228FFF245C138A00D779A5 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC228FFE245C138A00D779A5 /* Bindable.swift */; };
 		CCAF956A245C0A8000170876 /* StatefulTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAF9569245C0A8000170876 /* StatefulTextField.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +27,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CC228FF8245C137E00D779A5 /* PresetValidations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetValidations.swift; sourceTree = "<group>"; };
+		CC228FF9245C137E00D779A5 /* ValidationHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationHelpers.swift; sourceTree = "<group>"; };
+		CC228FFA245C137E00D779A5 /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
+		CC228FFE245C138A00D779A5 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
 		CCAF9566245C0A8000170876 /* libStatefulTextField.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStatefulTextField.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAF9569245C0A8000170876 /* StatefulTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,9 +65,21 @@
 		CCAF9568245C0A8000170876 /* StatefulTextField */ = {
 			isa = PBXGroup;
 			children = (
+				CCAF9570245C126200170876 /* Validation */,
 				CCAF9569245C0A8000170876 /* StatefulTextField.swift */,
+				CC228FFE245C138A00D779A5 /* Bindable.swift */,
 			);
 			path = StatefulTextField;
+			sourceTree = "<group>";
+		};
+		CCAF9570245C126200170876 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				CC228FFA245C137E00D779A5 /* Formatters.swift */,
+				CC228FF8245C137E00D779A5 /* PresetValidations.swift */,
+				CC228FF9245C137E00D779A5 /* ValidationHelpers.swift */,
+			);
+			path = Validation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC228FFF245C138A00D779A5 /* Bindable.swift in Sources */,
 				CCAF956A245C0A8000170876 /* StatefulTextField.swift in Sources */,
+				CC228FFC245C137E00D779A5 /* ValidationHelpers.swift in Sources */,
+				CC228FFD245C137E00D779A5 /* Formatters.swift in Sources */,
+				CC228FFB245C137E00D779A5 /* PresetValidations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
