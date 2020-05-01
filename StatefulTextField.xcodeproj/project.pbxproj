@@ -15,6 +15,9 @@
 		CC2290D5245C387D00D779A5 /* PresetValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2290D0245C387D00D779A5 /* PresetValidations.swift */; };
 		CC2290D6245C387D00D779A5 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2290D1245C387D00D779A5 /* Formatters.swift */; };
 		CC2290D7245C387D00D779A5 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2290D2245C387D00D779A5 /* Bindable.swift */; };
+		CCE21597245C467D00A6181B /* ValidationHelpers.swift in Headers */ = {isa = PBXBuildFile; fileRef = CC2290CF245C387D00D779A5 /* ValidationHelpers.swift */; };
+		CCE21598245C467D00A6181B /* PresetValidations.swift in Headers */ = {isa = PBXBuildFile; fileRef = CC2290D0245C387D00D779A5 /* PresetValidations.swift */; };
+		CCE21599245C467D00A6181B /* Formatters.swift in Headers */ = {isa = PBXBuildFile; fileRef = CC2290D1245C387D00D779A5 /* Formatters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +120,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2290C4245C385700D779A5 /* StatefulTextField.h in Headers */,
+				CCE21597245C467D00A6181B /* ValidationHelpers.swift in Headers */,
+				CCE21598245C467D00A6181B /* PresetValidations.swift in Headers */,
+				CCE21599245C467D00A6181B /* Formatters.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

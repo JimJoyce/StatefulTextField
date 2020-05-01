@@ -9,8 +9,8 @@
 import UIKit
 
 @IBDesignable
-class StatefulTextField: UITextField {
-  struct Configuration {
+public class StatefulTextField: UITextField {
+  public struct Configuration {
     var untouchedColor = UIColor(red: 240.0/255.0, green: 241.0/255.0, blue: 242.0/255.0, alpha: 1.0)
     var touchedColor   = UIColor(red: 77.0/255.0, green: 125.0/255.0, blue: 238.0/255.0, alpha: 1.0)
     var activeColor    = UIColor(red: 77.0/255.0, green: 125.0/255.0, blue: 238.0/255.0, alpha: 1.0)
@@ -35,7 +35,7 @@ class StatefulTextField: UITextField {
     }
   }
   
-  @IBInspectable override var font: UIFont? {
+  @IBInspectable open override var font: UIFont? {
     get {
       return super.font
     }
@@ -44,7 +44,7 @@ class StatefulTextField: UITextField {
     }
   }
   
-  static var config = Configuration()
+  static public var config = Configuration()
 
   typealias ValidationBlock = ((_ value: String) -> Bool)
   open var placeholderLabel: UILabel! = UILabel()
@@ -84,8 +84,8 @@ class StatefulTextField: UITextField {
     didSet { hasFormatter = true }
   }
   
-  @IBInspectable var maxLength: Int = 0
-  @IBInspectable var minLength: Int = 0
+  @IBInspectable open var maxLength: Int = 0
+  @IBInspectable open var minLength: Int = 0
 
   @IBInspectable open var labelText: String? {
     didSet {
@@ -301,7 +301,7 @@ class StatefulTextField: UITextField {
     self.layer.borderColor = UIColor.clear.cgColor
   }
 
-  override var intrinsicContentSize: CGSize {
+  open override var intrinsicContentSize: CGSize {
     return self.placeholderLabel.intrinsicContentSize
   }
 
@@ -322,7 +322,7 @@ class StatefulTextField: UITextField {
 
 extension StatefulTextField : UITextFieldDelegate {
 
-  func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+  public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
     guard self.maxLength != 0 else { return true }
 
     let newText = textField.text ?? ""
@@ -341,7 +341,7 @@ extension StatefulTextField : UITextFieldDelegate {
 
 
 
-  func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+  public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     guard _delegate?.textFieldShouldReturn?(textField) ?? true else { return false }
     
     resignFirstResponder()
