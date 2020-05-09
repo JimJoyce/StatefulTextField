@@ -8,43 +8,6 @@
 
 import Foundation
 
-// TODO: Clean up all the repeating stuff from trial/error setup
-
-//protocol Validatable {
-//  func validate<V>(_ value: V) -> Bool
-//}
-//
-//extension Validatable {
-//  func validate<V>(_ v: V) -> Bool {
-//    return false
-//  }
-//}
-//
-//extension String: Validatable {}
-
-//enum Validation {
-//  case required, notEmpty, email
-//
-//  static func run(_ validator: Validation, value: Validatable) -> (passes: Bool, val: Any?) {
-//    switch value {
-//    case is String:
-//      let val = value as! String
-//      switch validator {
-//      case .required, .notEmpty:
-//        return (passes: NotEmptyValidator.run(val), val)
-//      case .email:
-//        return (passes: EmailValidator.run(val), val)
-//      }
-//    case is Int:
-//      return (false, value)
-//    default:
-//      return (false, value)
-//    }
-//  }
-//
-//}
-
-
 enum PresetValidation {
   case required
   case notEmpty
@@ -59,7 +22,7 @@ enum PresetValidation {
   
   func run<T>(value: T) -> (passes: Bool, val: Any?) {
     guard let val = value as? String else { return (passes: false, val: value) }
-      switch self {
+    switch self {
       case .required, .notEmpty:
         return (passes: NotEmptyValidator.run(val), nil)
       case .email:
