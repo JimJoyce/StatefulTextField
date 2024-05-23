@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Validator {
+public protocol Validator {
     var name: String! { get set }
     associatedtype InputValueType
     typealias ConfigurationBlock<V:Validator> = ((_: V) -> V)

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Jim Joyce. All rights reserved.
 //
 
-enum StringFormatters: String {
+public enum StringFormatters: String {
     case phone = "(###) ###-####"
     case dob = "##/##/####"
     case creditCard = "#### #### #### ####"
