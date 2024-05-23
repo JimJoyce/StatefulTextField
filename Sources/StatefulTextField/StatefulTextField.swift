@@ -50,11 +50,11 @@ public class StatefulTextField: UITextField {
 
     typealias ValidationBlock = ((_ value: String) -> Bool)
     open var placeholderLabel: UILabel! = UILabel()
-    
+
     /// If a textField is optional, set this to false when setting properties
-    /// 
-    var shouldColorChangeForState: Bool = true
-    
+    ///
+    public var shouldColorChangeForState: Bool = true
+
     var validators: [PresetValidation] = []
     var outsideValidations: ValidationBlock?
     var textValue: Bindable<String> = Bindable<String>("")
@@ -86,7 +86,7 @@ public class StatefulTextField: UITextField {
         }
     }
 
-    var formatter: StringFormatters? {
+    public var formatter: StringFormatters? {
         didSet { hasFormatter = true }
     }
 
@@ -222,7 +222,7 @@ public class StatefulTextField: UITextField {
     }
 
     //  MARK: Life Cycle
-    
+
     @objc func valueDidChange(_ value: Any) -> Void {
         if hasFormatter {
             self.text = formatText(from: self.text)
@@ -259,7 +259,7 @@ public class StatefulTextField: UITextField {
     }
 
     //  MARK: Validations
-    
+
     func adjustStateFromValidations() -> Void {
         let isValidated = runValidations()
         if isValidated {
@@ -284,11 +284,11 @@ public class StatefulTextField: UITextField {
     /// You cant unpack an array into variadic arguments in swift yet,
     /// so the duplicated method signature is required as of right now.
     ///
-    func validate(with validationList: [PresetValidation]) -> Void {
+    public func validate(with validationList: [PresetValidation]) -> Void {
         validators = validationList
     }
 
-    func validate(with validationList: PresetValidation...) -> Void {
+    public func validate(with validationList: PresetValidation...) -> Void {
         validate(with: validationList)
     }
 
