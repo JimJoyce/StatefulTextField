@@ -15,6 +15,7 @@
 		CC2290D5245C387D00D779A5 /* PresetValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2290D0245C387D00D779A5 /* PresetValidations.swift */; };
 		CC2290D6245C387D00D779A5 /* Formatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2290D1245C387D00D779A5 /* Formatters.swift */; };
 		CC2290D7245C387D00D779A5 /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2290D2245C387D00D779A5 /* Bindable.swift */; };
+		CC3EE5E324CCABA30083AC16 /* PropertyWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3EE5E224CCABA30083AC16 /* PropertyWrappers.swift */; };
 		CCE21597245C467D00A6181B /* ValidationHelpers.swift in Headers */ = {isa = PBXBuildFile; fileRef = CC2290CF245C387D00D779A5 /* ValidationHelpers.swift */; };
 		CCE21598245C467D00A6181B /* PresetValidations.swift in Headers */ = {isa = PBXBuildFile; fileRef = CC2290D0245C387D00D779A5 /* PresetValidations.swift */; };
 		CCE21599245C467D00A6181B /* Formatters.swift in Headers */ = {isa = PBXBuildFile; fileRef = CC2290D1245C387D00D779A5 /* Formatters.swift */; };
@@ -42,6 +43,7 @@
 		CC2290D0245C387D00D779A5 /* PresetValidations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetValidations.swift; sourceTree = "<group>"; };
 		CC2290D1245C387D00D779A5 /* Formatters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatters.swift; sourceTree = "<group>"; };
 		CC2290D2245C387D00D779A5 /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		CC3EE5E224CCABA30083AC16 /* PropertyWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrappers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				CC2290CF245C387D00D779A5 /* ValidationHelpers.swift */,
 				CC2290D0245C387D00D779A5 /* PresetValidations.swift */,
 				CC2290D1245C387D00D779A5 /* Formatters.swift */,
+				CC3EE5E224CCABA30083AC16 /* PropertyWrappers.swift */,
 			);
 			path = Validation;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3EE5E324CCABA30083AC16 /* PropertyWrappers.swift in Sources */,
 				CC2290D7245C387D00D779A5 /* Bindable.swift in Sources */,
 				CC2290D4245C387D00D779A5 /* ValidationHelpers.swift in Sources */,
 				CC2290D5245C387D00D779A5 /* PresetValidations.swift in Sources */,
