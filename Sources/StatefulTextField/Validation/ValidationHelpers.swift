@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum PresetValidation {
+public enum PresetValidation {
     case required
     case notEmpty
     case email
