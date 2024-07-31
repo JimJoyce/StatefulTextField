@@ -294,7 +294,6 @@ public class StatefulTextField: UITextField {
 
     private func updateLabel() {
         placeholderLabel.text = labelText
-        //    placeholderLabel.font = UIFont(name: UIFont.Monsterrat.regular.name, size: fontSize)
         placeholderLabel.textColor = UIColor.gray
         placeholderLabel.textAlignment = .center
         placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
